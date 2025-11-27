@@ -1,0 +1,8 @@
+streamlit
+opencv-python
+moviepy==1.0.3
+moviepy
+faster-whisper
+groq
+python-dotenv
+numpy
