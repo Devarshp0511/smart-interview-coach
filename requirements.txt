@@ -1,5 +1,5 @@
 streamlit
-opencv-python
+opencv-python-headless
 moviepy==1.0.3
 moviepy
 faster-whisper
