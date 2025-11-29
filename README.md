@@ -53,15 +53,3 @@ graph TD
     C4 --> E
     E -->|Context + Metrics| F[Llama-3.1 on Groq]
     F --> G[Final Feedback Report]
-
-
-🛠️ Key Technical Features👁️
-
- Biometric Gaze TrackingInstead of generic face detection, I implemented a custom Gaze Estimation Algorithm:Vector Geometry: Calculates the Euclidean distance between the Iris center (Landmark 468) and Eye Corners (Landmarks 33/133).Normalization: Uses the total eye width as a reference to ensure accuracy regardless of camera distance.Performance: Optimized using opencv-python-headless for cloud deployment on Linux environments.⚡ Low-Latency InferenceASR: Integrated faster-whisper (CTranslate2 backend) for 4x faster transcription than standard OpenAI Whisper.LLM: Leveraged Groq's LPU (Language Processing Unit) hardware to generate comprehensive feedback in <2 seconds.📦 Tech StackDomainTools UsedFrontendStreamlit, HTML/CSS InjectionComputer VisionOpenCV, MediaPipe, NumPyAudio AILibrosa (Signal Processing), Faster-Whisper (ASR)Generative AILlama-3.1-8b-Instant (via Groq API)DeploymentStreamlit Cloud (Headless Linux Environment)💻 Installation & Local RunClone the repositoryBashgit clone [https://github.com/Devarshp0511/smart-interview-coach.git](https://github.com/Devarshp0511/smart-interview-coach.git)
-cd smart-interview-coach
-
-Install DependenciesBashpip install -r requirements.txt
-
-Run the ApplicationBashstreamlit run app.py
-
-<div align="center"><sub>Built with ❤️ by Devarsh Patel</sub></div>
