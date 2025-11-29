@@ -26,7 +26,6 @@ The **Smart Interview Coach** is an end-to-end evaluation platform designed to s
 3.  **Generative Reasoning:** Uses **Llama-3 (via Groq LPUs)** to provide "Hiring Manager" feedback based on transcript context.
 
 ![Dashboard Demo](demo_screenshot.png)
-*(Note: Replace with your actual screenshot)*
 
 ## 🏗️ System Architecture
 
