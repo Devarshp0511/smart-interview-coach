@@ -53,3 +53,34 @@ graph TD
     C4 --> E
     E -->|Context + Metrics| F[Llama-3.1 on Groq]
     F --> G[Final Feedback Report]
+
+
+
+
+## 🛠️ Key Technical Features
+
+### 👁️ Biometric Gaze Tracking
+Instead of generic face detection, I implemented a custom **Gaze Estimation Algorithm**:
+* **Vector Geometry:** Calculates the Euclidean distance between the Iris center (Landmark 468) and Eye Corners (Landmarks 33/133).
+* **Normalization:** Uses the total eye width as a reference to ensure accuracy regardless of camera distance.
+* **Performance:** Optimized using `opencv-python-headless` for cloud deployment on Linux environments.
+
+### ⚡ Low-Latency Inference
+* **ASR:** Integrated `faster-whisper` (CTranslate2 backend) for 4x faster transcription than standard OpenAI Whisper.
+* **LLM:** Leveraged **Groq's LPU (Language Processing Unit)** hardware to generate comprehensive feedback in <2 seconds.
+
+## 📦 Tech Stack
+
+| Domain | Tools Used |
+| :--- | :--- |
+| **Frontend** | Streamlit, HTML/CSS Injection |
+| **Computer Vision** | OpenCV, MediaPipe, NumPy |
+| **Audio AI** | Librosa (Signal Processing), Faster-Whisper (ASR) |
+| **Generative AI** | Llama-3.1-8b-Instant (via Groq API) |
+| **Deployment** | Streamlit Cloud (Headless Linux Environment) |
+
+<br>
+
+<div align="center">
+  <sub>Built with ❤️ by Devarsh Patel</sub>
+</div>
